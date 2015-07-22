@@ -1,5 +1,8 @@
 {
-"name": "project-name",
-"version": "0.0.1",
-"dependencies": {}
+  "name": "project-name",
+  "version": "0.0.1",
+  "dependencies": {
+    "video.js": "~4.12.11",
+    "bootstrap": "~3.3.5"
+  }
 }
