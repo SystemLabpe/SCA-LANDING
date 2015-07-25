@@ -1,5 +1,131 @@
-/*.video-js video{
-  width: auto !important;
-  height: auto !important;
+/* ==================================================
+   Fonts
+================================================== */
+@font-face {
+    font-family: 'GeometrN'; /*a name to be used later*/
+    src: url('../fonts/geometr_n.ttf'); /*URL to font*/
 }
-*/
+
+@font-face {
+    font-family: 'Geometr'; /*a name to be used later*/
+    src: url('../fonts/geometr.ttf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'MicrosoftYi'; /*a name to be used later*/
+    src: url('../fonts/microsoft_yi.ttf'); /*URL to font*/
+}
+
+/* ==================================================
+   Basic Styles
+================================================== */
+*{
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  font-family: "Open Sans",Arial,Helvetica Neue,sans-serif;
+  color: #706F6F;
+}
+
+ul {
+  margin: 0;
+  list-style: none;
+}
+
+a, a:hover, a:focus {
+  text-decoration: none;
+}
+
+h2 {
+  font-family: 'GeometrN';
+}
+
+h3 {
+  font-family: 'Geometr';
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+
+h2, h3 {
+  color: #474747;
+  margin: 0;
+}
+
+p {
+  font-size: 16px;
+}
+
+/* ==================================================
+   Colors
+================================================== */
+
+
+/* ==================================================
+    Sections
+================================================== */
+.sca-section {
+  padding: 70px 0;
+  background-color: white;
+}
+
+.sca-section h2{
+  padding: 1em 0 2.5em;
+  text-align: center;
+  font-weight: bold;
+}
+
+.sca-section h3 {
+  text-align: center;
+  padding: 0.5em 0 2.5em;
+}
+
+/* ==================================================
+    Home
+================================================== */
+
+/* ==================================================
+    Parents-Benefits
+================================================== */
+
+/* ==================================================
+    School-Benefits
+================================================== */
+
+/* ==================================================
+    Demo
+================================================== */
+#sca-demo {
+  background:#FFFFFF;
+  -webkit-transition:all 0.5s linear;
+  -moz-transition:all 0.5s linear;
+  -o-transition:all 0.5s linear;
+  transition:all 0.5s linear;
+}
+
+#sca-demo .module {
+  margin: 0 0 2em;
+}
+
+body.attendance #sca-demo{
+  background: #FFFFE2;
+}
+
+body.evaluation #sca-demo{
+  background: #D4F0EC;
+}
+
+body.task #sca-demo{
+  background: #CBE3BD;
+}
+
+/* ==================================================
+    Contact
+================================================== */
