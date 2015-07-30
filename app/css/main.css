@@ -90,10 +90,6 @@ p {
 /* ==================================================
     Home
 ================================================== */
-#contact {
-  background-color: transparent;
-}
-
 #home {
   height: 680px;
   background-color: transparent;
@@ -114,19 +110,19 @@ p {
 }
 
 .home-slider .ns_slideContent.bg-1 {
-    background-image: url('../img/home/1.jpg');
+    background-image: url('../img/home/_1.jpg');
 }
 
 .home-slider .ns_slideContent.bg-2 {
-  background-image: url('../img/home/2.jpg');
+  background-image: url('../img/home/_2.jpg');
 }
 
 .home-slider .ns_slideContent.bg-3 {
-   background-image: url('../img/home/3.jpg');
+   background-image: url('../img/home/_3.jpg');
 }
 
 .home-slider .ns_slideContent.bg-4 {
-   background-image: url('../img/home/4.jpg');
+   background-image: url('../img/home/_4.jpg');
 }
 
 /* ==================================================
@@ -167,3 +163,8 @@ body.task #sca-demo{
 /* ==================================================
     Contact
 ================================================== */
+
+#contact {
+  height: 480px;
+  background-color: transparent;
+}
