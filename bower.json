@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "dependencies": {
     "video.js": "~4.12.11",
-    "bootstrap": "~3.3.5"
+    "bootstrap": "~3.3.5",
+    "jquery-ui": "~1.11.4"
   }
 }

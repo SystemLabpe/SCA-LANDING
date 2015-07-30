@@ -103,6 +103,10 @@ jQuery(document).ready(function($){
     }
   }
 
+  $(".home-slider").nerveSlider({
+    sliderFullscreen: true
+  });
+
   $( window ).scroll(function() {
     onchangeDemoModule();
   });

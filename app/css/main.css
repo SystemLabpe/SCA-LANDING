@@ -90,6 +90,44 @@ p {
 /* ==================================================
     Home
 ================================================== */
+#contact {
+  background-color: transparent;
+}
+
+#home {
+  height: 680px;
+  background-color: transparent;
+}
+
+.home-slider.ns_nerveSlider {
+  position: absolute;
+  z-index: -9999;
+}
+
+.home-slider .ns_slideContent {
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.home-slider .ns_slideContent.bg-1 {
+    background-image: url('../img/home/1.jpg');
+}
+
+.home-slider .ns_slideContent.bg-2 {
+  background-image: url('../img/home/2.jpg');
+}
+
+.home-slider .ns_slideContent.bg-3 {
+   background-image: url('../img/home/3.jpg');
+}
+
+.home-slider .ns_slideContent.bg-4 {
+   background-image: url('../img/home/4.jpg');
+}
 
 /* ==================================================
     Parents-Benefits
