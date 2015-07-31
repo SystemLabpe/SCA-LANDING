@@ -42,6 +42,16 @@ a, a:hover, a:focus {
   text-decoration: none;
 }
 
+h1 {
+  font-size: 46px;
+  font-family: 'GeometrN';
+}
+
+h1 .small{
+  color: #FFFFFF;
+
+}
+
 h2 {
   font-family: 'GeometrN';
 }
@@ -91,8 +101,12 @@ p {
     Home
 ================================================== */
 #home {
-  height: 680px;
+  height: 800px;
   background-color: transparent;
+}
+
+.home-slider .logo {
+  margin: 50px 0 0 30px;
 }
 
 .home-slider.ns_nerveSlider {
@@ -102,7 +116,7 @@ p {
 
 .home-slider .ns_slideContent {
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -110,19 +124,62 @@ p {
 }
 
 .home-slider .ns_slideContent.bg-1 {
-    background-image: url('../img/home/_1.jpg');
+  background-image: url('../img/home/__1.jpg');
+}
+
+.home-slider .ns_slideContent.bg-1 .logo{
+  margin: 100px 0 0 50px;
+  text-align: center;
+  color: #FFFFFF;
+  font-family: 'Geo'
+}
+
+.home-slider .ns_slideContent.bg-1 .logo img {
+  padding: 0 220px;
+  display: block;
+  position: relative;
+  max-width: 100%;
+}
+
+.home-slider .ns_slideContent .slogan {
+  position: absolute;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.home-slider .ns_slideContent .slogan p {
+  font-family: 'GeometrN';
+  margin: 0;
+  font-size: 35px;
+  padding: 20px;
+  letter-spacing: 2px;
 }
 
 .home-slider .ns_slideContent.bg-2 {
-  background-image: url('../img/home/_2.jpg');
+  background-image: url('../img/home/__2.jpg');
+}
+
+.home-slider .ns_slideContent.bg-2 .slogan {
+  background-color: rgba(35, 21, 21, 0.8);
+  bottom: 15px;
 }
 
 .home-slider .ns_slideContent.bg-3 {
-   background-image: url('../img/home/_3.jpg');
+  background-image: url('../img/home/__3.jpg');
+}
+
+.home-slider .ns_slideContent.bg-3 .slogan {
+  background-color: rgba(193, 190, 190, 0.5);
+  bottom: 50px;
 }
 
 .home-slider .ns_slideContent.bg-4 {
-   background-image: url('../img/home/_4.jpg');
+  background-image: url('../img/home/__4.jpg');
+}
+
+.home-slider .ns_slideContent.bg-4 .slogan {
+  background-color: rgba(103, 57, 9, 0.6);
+  bottom: 50px;
 }
 
 /* ==================================================

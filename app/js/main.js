@@ -104,7 +104,8 @@ jQuery(document).ready(function($){
   }
 
   $(".home-slider").nerveSlider({
-    sliderFullscreen: true
+    sliderFullscreen: true,
+    slideTransitionDelay: 555000
   });
 
   $( window ).scroll(function() {
