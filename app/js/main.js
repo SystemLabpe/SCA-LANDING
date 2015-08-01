@@ -14,8 +14,8 @@ var video1 = null, video2 = null, video3 = null,
     video4 = null, video5 = null, video6 = null;
 
 video1 = videojs('v_prueba_1',defaultVideoOptions, function() {
-  this.play();
   this.on('ended', function() {
+    setAnimation($('#video2'),'animated shake');
     video2.play();
   });
   videosArray.push({element:this,ratio:9/16});
@@ -29,8 +29,8 @@ video2 = videojs('v_prueba_2', defaultVideoOptions, function() {
 });
 
 video3 = videojs('v_prueba_3',defaultVideoOptions, function() {
-  this.play();
   this.on('ended', function() {
+    setAnimation($('#video4'),'animated shake');
     video4.play();
   });
   videosArray.push({element:this,ratio:9/16});
@@ -44,8 +44,8 @@ video4 = videojs('v_prueba_4', defaultVideoOptions, function() {
 });
 
 video5 = videojs('v_prueba_5',defaultVideoOptions, function() {
-  this.play();
   this.on('ended', function() {
+    setAnimation($('#video6'),'animated shake');
     video6.play();
   });
   videosArray.push({element:this,ratio:9/16});
@@ -58,7 +58,47 @@ video6 = videojs('v_prueba_6', defaultVideoOptions, function() {
   videosArray.push({element:this,ratio:16/9});
 });
 
+var wow = new WOW(
+  {
+    boxClass:     'wow',
+    animateClass: 'animated', // animation css class (default is animated)
+    offset:       150,          // distance to the element when triggering the animation (default is 0)
+    mobile:       false,       // trigger animations on mobile devices (default is true)
+    live:         true,       // act on asynchronously loaded content (default is true)
+    callback:     function(box) {
+      switch(box.id){
+        case 'video1':
+          video1.play();
+          break;
+        case 'video3':
+          video3.play();
+          break;
+        case 'video5':
+          video5.play();
+          break;
+        default:
+          break;
+      }
+      video1.play();
+    }
+  }
+);
+wow.init();
+
+function setAnimation(element,animation) {
+  element.removeClass().addClass(animation + ' animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',function(){
+    element.removeClass();
+    element.removeAttr('style');
+  });
+}
+
 jQuery(document).ready(function($){
+
+  $('div[name=sca-animation]').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',function(){
+    $(this).removeClass();
+    $(this).removeAttr('style');
+  });
+
   var main = $('body');
   var currentCls = 'home';
   var modules = {
@@ -105,7 +145,7 @@ jQuery(document).ready(function($){
 
   $(".home-slider").nerveSlider({
     sliderFullscreen: true,
-    slideTransitionDelay: 555000
+    slideTransitionDelay: 5000
   });
 
   $( window ).scroll(function() {

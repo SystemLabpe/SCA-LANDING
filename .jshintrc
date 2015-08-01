@@ -11,6 +11,7 @@
   "strict": true,
   "jquery": true,
   "predef": [
-    "videojs"
+    "videojs",
+    "WOW"
   ]
 }

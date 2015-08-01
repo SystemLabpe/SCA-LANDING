@@ -94,7 +94,6 @@ p {
 
 .sca-section h3 {
   text-align: center;
-  padding: 0.5em 0 2.5em;
 }
 
 /* ==================================================
@@ -183,12 +182,38 @@ p {
 }
 
 /* ==================================================
+    Benefits
+================================================== */
+.benefits {
+  display: table;
+}
+
+.benefits .benefit-title, .benefits .benefit-content {
+  display: table-cell;
+  float: none;
+}
+
+.benefits .benefit-content .benefit h3 {
+  padding: 1.5em 0;
+}
+
+.benefits .benefit-title {
+  vertical-align: middle;
+}
+
+/* ==================================================
     Parents-Benefits
 ================================================== */
+#parent-benefits .benefit h3, #parent-benefits .benefit p{
+  text-align: left;
+}
 
 /* ==================================================
     School-Benefits
 ================================================== */
+#school-benefits .benefit h3, #school-benefits .benefit p{
+  text-align: right;
+}
 
 /* ==================================================
     Demo
@@ -205,15 +230,30 @@ p {
   margin: 0 0 2em;
 }
 
-body.attendance #sca-demo{
+#sca-demo .module h3 {
+  padding: 0.5em 0 2.5em;
+}
+
+#sca-demo .module .row {
+  display: table;
+  margin-bottom: 20px;
+}
+
+#sca-demo .module .module-video, #sca-demo .module .module-content {
+  display: table-cell;
+  float: none;
+  vertical-align: middle;
+}
+
+body.attendance #sca-demo {
   background: #FFFFE2;
 }
 
-body.evaluation #sca-demo{
+body.evaluation #sca-demo {
   background: #D4F0EC;
 }
 
-body.task #sca-demo{
+body.task #sca-demo {
   background: #CBE3BD;
 }
 
