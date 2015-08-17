@@ -18,14 +18,14 @@ video1 = videojs('v_prueba_1',defaultVideoOptions, function() {
     setAnimation($('#video2'),'animated shake');
     video2.play();
   });
-  videosArray.push({element:this,ratio:9/16});
+  videosArray.push({element:this,ratio:68/86});
 });
 
 video2 = videojs('v_prueba_2', defaultVideoOptions, function() {
   this.on('ended', function() {
     video1.play();
   });
-  videosArray.push({element:this,ratio:16/9});
+  videosArray.push({element:this,ratio:44/25});
 });
 
 video3 = videojs('v_prueba_3',defaultVideoOptions, function() {
@@ -33,14 +33,14 @@ video3 = videojs('v_prueba_3',defaultVideoOptions, function() {
     setAnimation($('#video4'),'animated shake');
     video4.play();
   });
-  videosArray.push({element:this,ratio:9/16});
+  videosArray.push({element:this,ratio:562/860});
 });
 
 video4 = videojs('v_prueba_4', defaultVideoOptions, function() {
   this.on('ended', function() {
     video3.play();
   });
-  videosArray.push({element:this,ratio:16/9});
+  videosArray.push({element:this,ratio:44/25});
 });
 
 video5 = videojs('v_prueba_5',defaultVideoOptions, function() {
@@ -48,14 +48,14 @@ video5 = videojs('v_prueba_5',defaultVideoOptions, function() {
     setAnimation($('#video6'),'animated shake');
     video6.play();
   });
-  videosArray.push({element:this,ratio:9/16});
+  videosArray.push({element:this,ratio:562/860});
 });
 
 video6 = videojs('v_prueba_6', defaultVideoOptions, function() {
   this.on('ended', function() {
     video5.play();
   });
-  videosArray.push({element:this,ratio:16/9});
+  videosArray.push({element:this,ratio:44/25});
 });
 
 var wow = new WOW(
