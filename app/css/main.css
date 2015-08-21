@@ -235,14 +235,45 @@ p {
 }
 
 #sca-demo .module .row {
-  display: table;
+  /*display: table;*/
   margin-bottom: 20px;
 }
 
-#sca-demo .module .module-video, #sca-demo .module .module-content {
+/*#sca-demo .module .module-video, #sca-demo .module .module-content {
   display: table-cell;
   float: none;
   vertical-align: middle;
+}*/
+
+#sca-demo #video1 {
+  max-width: 634px;
+  max-height: 466px;
+  display: inline-block;
+  height: auto;
+  margin: 0 15px;
+  position: relative;
+  width: auto;
+}
+
+#sca-demo #video1 .video-js{
+  position: absolute;
+  top: 4.9%;
+  left: 10.7%;
+  width: 79% !important;
+  height: auto !important;
+}
+
+#sca-demo #video1 .video-js video{
+  height: auto !important;
+}
+
+#sca-demo #video1 img {
+  width: 100%;
+  height: 100%;
+}
+
+#sca-demo .module .video-js {
+  margin: 0 auto;
 }
 
 body.attendance #sca-demo {

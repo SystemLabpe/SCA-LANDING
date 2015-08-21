@@ -98,6 +98,8 @@ gulp.task('copy', function() {
   .pipe(gulp.dest('./dist'));
   gulp.src('./app/fonts/**')
   .pipe(gulp.dest('./dist/fonts'));
+  gulp.src('./app/lib/font-awesome/fonts/**')
+  .pipe(gulp.dest('./dist/fonts'));
   gulp.src('./app/img/**')
   .pipe(gulp.dest('./dist/img'));
   gulp.src('./app/video/**')
