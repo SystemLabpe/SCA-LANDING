@@ -145,7 +145,7 @@ jQuery(document).ready(function($){
 
   $(".home-slider").nerveSlider({
     sliderFullscreen: true,
-    slideTransitionDelay: 5000
+    slideTransitionDelay: 55000
   });
 
   $( window ).scroll(function() {
