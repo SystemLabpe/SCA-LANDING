@@ -134,10 +134,11 @@ p {
 }
 
 .home-slider .ns_slideContent.bg-1 .logo img {
-  padding: 0 220px;
+  width: 250px;
+  margin: 0 auto;
   display: block;
   position: relative;
-  max-width: 100%;
+  max-width: 10;
 }
 
 .home-slider .ns_slideContent .slogan {
