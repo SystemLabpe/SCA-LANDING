@@ -313,5 +313,16 @@ body.task #sca-demo {
 
 #contact {
   height: 480px;
-  background-color: transparent;
+  /*background-color: transparent;*/
 }
+
+.contact-message p .big {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.contact-info .contact-icon {
+  display: block;
+  margin-bottom: 30px;
+}
+
