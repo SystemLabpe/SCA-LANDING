@@ -371,7 +371,22 @@ body.task #sca-demo {
 
 #contact {
   height: 480px;
-  /*background-color: transparent;*/
+  color: #fff;
+  background-image: url('../img/board.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#contact h2 {
+  color: #fff;
+}
+
+.contact-message {
+  margin-bottom: 40px;
 }
 
 .contact-message p .big {
@@ -382,5 +397,11 @@ body.task #sca-demo {
 .contact-info .contact-icon {
   display: block;
   margin-bottom: 30px;
+
+}
+
+.contact-info a {
+  color: #fff;
+  text-decoration: none;
 }
 
