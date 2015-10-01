@@ -187,6 +187,16 @@ p {
 ================================================== */
 .benefits {
   display: table;
+  border: 5px solid #ffffff;
+}
+
+.benefits .benefit-title h2{
+  padding: 0;
+  color: #FFFFFF;
+}
+
+.benefits .benefit {
+  min-height: 200px;
 }
 
 .benefits .benefit-title, .benefits .benefit-content {
@@ -195,7 +205,11 @@ p {
 }
 
 .benefits .benefit-content .benefit h3 {
-  padding: 1.5em 0;
+  padding: 0.8em 0;
+  background: rgba(0, 0, 0, 0.6);
+  margin: 15px 0;
+  color: #FFFFFF;
+  text-align: center;
 }
 
 .benefits .benefit-title {
@@ -205,16 +219,59 @@ p {
 /* ==================================================
     Parents-Benefits
 ================================================== */
-#parent-benefits .benefit h3, #parent-benefits .benefit p{
-  text-align: left;
+#parent-benefits {
+  background-color: #F5D4D2;
+  border-bottom: 1px solid #d7d8d9;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.8),inset 0 -1px 0 rgba(255,255,255,.8);
+}
+
+#parent-benefits .benefit-title {
+  background-color: #F44336;
+}
+
+#parent-benefits .benefit.benefit-1 {
+  background-color: #B9F6CA;
+}
+
+#parent-benefits .benefit.benefit-2 {
+  background-color: #FFFF8D;
+}
+
+#parent-benefits .benefit.benefit-3 {
+  background-color: #84FFFF;
+}
+
+#parent-benefits .benefit.benefit-4 {
+  background-color: #FF8A80;
 }
 
 /* ==================================================
     School-Benefits
 ================================================== */
-#school-benefits .benefit h3, #school-benefits .benefit p{
-  text-align: right;
+#school-benefits {
+  background-color: #AAACB9;
 }
+
+#school-benefits .benefit-title {
+  background-color: #3F51B5;
+}
+
+#school-benefits .benefit.benefit-1 {
+  background-color: #8C9EFF;
+}
+
+#school-benefits .benefit.benefit-2 {
+  background-color: #80CBC4;
+}
+
+#school-benefits .benefit.benefit-3 {
+  background-color: #FFEE58;
+}
+
+#school-benefits .benefit.benefit-4 {
+  background-color: #F06292;
+}
+
 
 /* ==================================================
     Demo
@@ -297,15 +354,15 @@ p {
 }
 
 body.attendance #sca-demo {
-  background: #FFFFE2;
+  background: #FFEE58;
 }
 
 body.evaluation #sca-demo {
-  background: #D4F0EC;
+  background: #9FA8DA;
 }
 
 body.task #sca-demo {
-  background: #CBE3BD;
+  background: #66BB6A;
 }
 
 /* ==================================================
